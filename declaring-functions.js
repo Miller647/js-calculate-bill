@@ -89,3 +89,17 @@ const button = document.querySelector(".click");
 button.addEventListener("click", function () {
   console.log(`Nice Clicking!!`);
 });
+
+// Timer Callback
+
+setTimeout(tash.yellHi, 1000);
+
+// can pass an anonymous function
+setTimeout(function () {
+  console.log(`DONE!!`);
+}, 2500);
+
+// can pass as an arrow function
+setTimeout(() => {
+  console.log(`TIME TO EAT!`);
+}, 3000);
