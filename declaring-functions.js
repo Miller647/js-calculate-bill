@@ -73,15 +73,19 @@ const tash = {
   },
 };
 
-// Callback Functions
+// Callback Functions - function passed into another function and then it is called by the browser at a later point in time/when something is done
 
 // Click callback
 const button = document.querySelector(".click");
 
-function handleClick() {
-    console.log(`Great Clicking!`)
-}
+// functions can be declared outside of the handler
+// function handleClick() {
+//   console.log(`Great Clicking!`);
+// }
 
-button.addEventListener("click", function() {
-    console.log(`Nice Clicking!!`)
+// button.addEventListener("click", handleClick);
+
+// can pass an anonymous function
+button.addEventListener("click", function () {
+  console.log(`Nice Clicking!!`);
 });
